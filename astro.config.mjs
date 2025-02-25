@@ -7,8 +7,10 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
   // add yur domain name here
   site: "https://lumetrika.com",
+
   integrations: [sitemap()],
   output: "static",
   adapter: vercel({
