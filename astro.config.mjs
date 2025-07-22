@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
-import vercel from "@astrojs/vercel";
+// import vercel from "@astrojs/vercel";
 
 export default defineConfig({
   vite: {
@@ -9,11 +9,11 @@ export default defineConfig({
   },
 
   // add yur domain name here
-  site: "https://lumetrika.com",
+  site: "https://car.lumetrika.com",
 
   integrations: [sitemap()],
   output: "static",
-  adapter: vercel({
-    imageService: true,
-  }),
+  // adapter: vercel({
+  //   imageService: true,
+  // }),
 });
